@@ -1,0 +1,21 @@
+/*Frenzy Icons*/
+@font-face {
+    font-family: icons;
+    src: url(Typography/BariolFrenzyIcons.ttf);
+}
+
+.verticalCenter{
+  display: flex;
+  align-items: center;
+}
+
+.horizontalCenter{
+  justify-content: center;
+}
+
+.frenzyIcons {
+    font-family: icons;
+    color: #fff;
+    font-size: 40px;
+    width: 20%;
+}

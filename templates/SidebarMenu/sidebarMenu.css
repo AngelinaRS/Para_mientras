@@ -1,0 +1,218 @@
+/* Sidebar Styles */
+
+/*Sidebar Container*/
+#sidebar-wrapper {
+  /* -------- The Size of the sidebarMenu are in #sidebar-wrapper Media Query --------*/
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 250px;/*If this style is deleted then the toggle efect doesn't works*/
+  margin-left: -250px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: fixed;
+  /*-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;*/
+  width: 0;
+  z-index: 1000;
+}
+/*Only Content*/
+.sidebar-nav {
+  height: 93%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+/*Frenzy Dashboard Text in Sidebar Menu*/
+.sidebar-nav > .sidebar-brand {
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  border-bottom: 1px solid #3F4A5E;
+}
+/*Profile Container Size into Sidebar Menu*/
+.profileContainer {
+  border-bottom: 1px solid #3F4A5E;
+  height: 70px;
+  width: auto;
+}
+/*Vertical Align Centered for the Photo Profile*/
+.photoProfilePosition {
+  align-items: center;
+  display: flex;
+  height: 69px;
+  justify-content: flex-end;
+  -ms-display: flex;
+}
+
+.photoProfileContainer {
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  height: 55px;
+  width: 55px;
+}
+/*Autosize for the Photo Profile*/
+.sizePhotoProfile {
+  border-radius: 2px;
+  height: 100%;
+}
+/*Container Style for the Business Information*/
+.infoBusiness {
+  color: white;
+  height: 69px;
+  padding: 3% 0 0 0 !important;/*Vertical Centered Text Information*/
+}
+/*Move to Left Business Information Content*/
+.businessContain {
+  height: 100%;
+  list-style: none;
+  padding-left: 0 !important;
+}
+/*Spacing Between Bussines Information Text*/
+.infoBusinessSpacing {
+  line-height: 20px !important;
+}
+/*Style for the Name User*/
+.nameUserText {
+  color: #A7A9AC;
+  font-size: 12px;
+  text-indent: 0 !important;
+}
+
+.editSidebarText {
+  color: #00DDC1;
+  font-size: 12px;
+  cursor: pointer;
+}
+/*Indent Options into Sidebar Menu*/
+.sidebar-nav li.colorTextDefault{
+  text-indent: 25px;
+  line-height: 40px;
+}
+/*Background Mouse Hover Options*/
+.sidebar-nav li.colorTextDefault:hover{
+  color: #FFFFFF;
+  cursor: pointer;
+  /*Frenzy Light Color*/
+  background-color: #00DDC1;
+}
+/*Border Menu Selected*/
+.optionSelected {
+  border-left: 5px solid #00DDC1;
+  color: #FFFFFF !important;
+}
+/* Toggle Styles (Transition) */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*Logout Container*/
+.logoutSidebar {
+  border-top: 1px solid #3F4A5E;
+  bottom: 0;/*Position Div Tag*/
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  display: inline;
+  text-align: center;
+  text-indent: 0 !important;
+  width: 200px;
+}
+/*Size for the Logout Image*/
+.logoutSidebarImage {
+  width: 28px;
+  margin-left: -3%;
+}
+/*Logout Color Text*/
+#logout {
+  color: #FFFFFF;
+}
+
+
+/*Auto Hide Sidebar Menu in small screen*/
+@media(min-width: 768px) {
+  /*Spacing for the General Content (Aside of the Sidebar Menu)*/
+  #wrapper {
+    padding-left: 200px;
+  }
+  /*SidebarMenu Size the Container*/
+  #sidebar-wrapper {
+    width: 200px;
+  }
+  /*Logout Container Show*/
+  .logoutSidebar {
+    opacity: 1;
+    transition: opacity 2s linear;
+    visibility: visible;
+  }
+
+  .menuResponsive {
+    display: none;
+  }
+}
+/*Mobile Screen*/
+@media only screen and (max-width:767px){
+  /*Position of the Content While Menu is Opened*/
+  #wrapper {
+    padding-left: 40px;
+    transition: all .4s ease 0s;
+    height: 100%
+  }
+  /*Show Menu*/
+  .sidebarWrapperShow {
+    width: 200px !important;
+  }
+  /*Icon Menu Display*/
+  .menuResponsiveFix {
+    position: fixed;
+    left: 171px;
+    z-index: 9999 !important;
+  }
+  /*Show Logout Button When Menu is Opening in Small Devices*/
+  .logoutSidebarShow {
+    opacity: 1 !important;
+    transition: opacity 2s linear !important;
+    visibility: visible !important;
+  }
+  /*Show Logout Container in Medium and Large Screen*/
+  .logoutSidebar {
+    visibility: hidden;
+    opacity: 0;
+    /*transition: visibility 0s 1s, opacity 1s linear;*/
+  }
+  /*Icon Menu Responsive Centered*/
+  .iconMenuResponsive {
+    align-items:center;
+    display:flex;
+    height:50px;
+    justify-content:center;
+  }
+  /*Size for the Menu Responsive*/
+  .menuResponsive {
+    word-wrap: break-word;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  /*change z-index for menu*/
+  .z_index_menu{
+    z-index: 1
+  }
+}
+
+@media (max-height: 400px) {
+  .sidebar-nav li.colorTextDefault{
+    line-height: 26px;
+  }
+}
