@@ -11,7 +11,7 @@ dashboard.config(function($stateProvider, $urlRouterProvider) {
       views: {
         '': {
           templateUrl: "templates/LoginAndRegister/loginAndRegister.html",
-          controller: "LoginAndRegisterCtrl"
+          controller: "loginCtrl"
         }
       }
     })

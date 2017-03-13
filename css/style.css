@@ -1,21 +1,101 @@
 /*Frenzy Icons*/
 @font-face {
-    font-family: icons;
+    font-family: Bariol_Frenzy_Icons;
     src: url(Typography/BariolFrenzyIcons.ttf);
 }
 
-.verticalCenter{
+@font-face {
+  font-family: Bariol_Bold;
+  src: url(Typography\Bariol_Bold.otf);
+}
+
+@font-face {
+  font-family: OpenSans_Regular;
+  src: url(css\Typography\OpenSans-Regular.ttf);
+}
+
+body{
+  background-color: black;
+}
+
+/*Style bar header*/
+.barHeader{
+  height: 60px;
+  background-color: #00BAB9;
+}
+
+/*Style logo Frenzy*/
+.imgLogo{
+  height: 100%;
+  width: 160px;
+}
+
+.contentIconsMenu{
+  display: flex;
+}
+
+.IconMenu{
+  text-align: center;
+  width: 20%;
+
+}
+
+/*Style icons menu*/
+.frenzyHeaderIcons {
+    font-family: Bariol_Frenzy_Icons;
+    color: #fff;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/*Style text menu*/
+.textMenuHeader{
+  font-size: 9px;
+  color: #fff;
+  font-family: Bariol_Bold;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 0;
+}
+
+
+/*Style for all views*/
+
+.flexVerticalCenter{
   display: flex;
   align-items: center;
 }
 
-.horizontalCenter{
+.flexHorizontalCenter{
+  display: flex;
   justify-content: center;
 }
 
-.frenzyIcons {
-    font-family: icons;
-    color: #fff;
-    font-size: 40px;
-    width: 20%;
+.justifyContentCenter{
+  justify-content: center;
+}
+
+.floatRight{
+  float: right;
+}
+
+.floatLeft{
+  float: left;
+}
+
+.paddingBottom0{
+  padding-bottom: 0;
+}
+
+.width100{
+  width: 100%;
+}
+
+.height100{
+  height: 100%;
+}
+
+.textCenter{
+  text-align: center;
 }
