@@ -1,9 +1,13 @@
+<!-- Content the bar header -->
 <div class="container-fluid">
-  <div class="row barHeader"  style="padding: 0 15px">
+  <div class="row barHeader">
+    <!-- Content the logo of Frenzy -->
     <div class="flexVerticalCenter justifyContentCenter col-xs-5 col-sm-3 col-md-2 col-lg-2">
       <img class="imgLogo" src="img\LogoFrenzy.png" alt="LogoFrenzy">
     </div>
+    <!-- Content all icons of the menu -->
     <div class="floatRight contentIconsMenu col-sm-6 col-md-6 col-lg-4">
+      <!-- What is Frenzy -->
       <div class="IconMenu">
         <p class="frenzyHeaderIcons">
           Y
@@ -12,7 +16,7 @@
           ¿Qué es Frenzy?
         </p>
       </div>
-
+      <!-- Favorites -->
       <div class="IconMenu">
         <p class="frenzyHeaderIcons">
           B
@@ -21,7 +25,7 @@
           Favoritos
         </p>
       </div>
-
+      <!-- Points -->
       <div class="IconMenu">
         <p class="frenzyHeaderIcons">
           C
@@ -30,7 +34,7 @@
           Puntos
         </p>
       </div>
-
+      <!-- Gifts -->
       <div class="IconMenu">
         <p class="frenzyHeaderIcons">
           K
@@ -39,59 +43,62 @@
           Premios
         </p>
       </div>
-
-      <div id="showLogin" class="IconMenu flexVerticalCenter justifyContentCenter" ng-click="showLogin()" style="height:60px;">
+      <!-- Settings -->
+      <div id="showLogin" class="IconMenu flexVerticalCenter justifyContentCenter" ng-click="showLogin()">
         <p class="frenzyHeaderIcons">
           D
         </p>
       </div>
     </div>
   </div>
-</div>
 
-<div id="boxLoginContent" class="container modalLogin flexVerticalCenter justifyContentCenter">
-  <div class="row boxLogin"  style="padding: 2% 5%">
-    <div class="contentDownloadIt col-xs-12 col-sm-5 col-md-6 col-lg-7">
-      <div class="width100">
-        <p class="descriptionDownloadit">Ingresa y descubre de todas las promociones y cupones que tenemos para ti.</p>
-        <span class="DownloadIt">Descárgala.</span>
+
+  <!-- Content the login or register -->
+  <div id="boxLoginContent" class="contentLogin flexVerticalCenter justifyContentCenter">
+    <div class="row boxLogin">
+      <div class="contentDownloadIt col-xs-12 col-sm-5 col-md-6 col-lg-7">
+        <div class="width100">
+          <p class="descriptionDownloadit">Ingresa y descubre de todas las promociones y cupones que tenemos para ti.</p>
+          <span class="DownloadIt">Descárgala.</span>
+        </div>
       </div>
-    </div>
-    <div class="height100 floatRight flexVerticalCenter col-xs-12 col-sm-7 col-md-6 col-lg-4">
-      <div class="login floatRight">
-        <div class="width100"  style="padding: 10px 0; height:25%">
-          <p class="textIngresa">Ingresa con</p>
-          <div class="width100 flexHorizontalCenter">
-            <button class="facebook activeButton" name="facebook">Facebook</button>
+      <div class="height100 floatRight flexVerticalCenter col-xs-12 col-sm-7 col-md-6 col-lg-4">
+        <div class="login floatRight">
+          <div class="boxItemsLogin">
+            <p class="textIngresa">Ingresa con</p>
+            <div class="width100 flexHorizontalCenter">
+              <div class="facebook flexVerticalCenter justifyContentCenter">
+                <div>Facebook</div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="width100 flexVerticalCenter" style="padding: 10px 0; height:20%">
-          <div class="textIngresa line40"></div>
-          <div class="textIngresa o">O</div>
-          <div class="textIngresa line40"></div>
-        </div>
+          <div class="boxItemsLogin flexVerticalCenter">
+            <div class="textIngresa line40"></div>
+            <div class="textIngresa o">O</div>
+            <div class="textIngresa line40"></div>
+          </div>
 
-        <div class="width100 flexVerticalCenter flexHorizontalCenter"  style="padding: 10px 0; height:17.5%">
-          <button class="email activeButton" name="email">Correo Electrónico</button>
-        </div>
+          <div class="boxItemsLogin flexVerticalCenter flexHorizontalCenter">
+            <div class="email flexVerticalCenter justifyContentCenter">
+              <div>Correo Electrónico</div>
+            </div>
+          </div>
 
-        <div class="width100 flexVerticalCenter" style="padding: 10px 0; height:20%">
-          <div class="textIngresa line100"></div>
-        </div>
+          <div class="boxItemsLogin flexVerticalCenter">
+            <div class="textIngresa line100"></div>
+          </div>
 
-        <div class="width100 flexVerticalCenter flexHorizontalCenter"  style="padding: 10px 0; height:17.5%">
-          <button class="enterprise activeButton" name="enterprise">¿Eres Empresa?</button>
+          <div class="boxItemsLogin flexVerticalCenter flexHorizontalCenter">
+            <div class="enterprise flexVerticalCenter justifyContentCenter">
+              <div>¿Eres Empresa?</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- <p class="frenzyIcons">
-  Y B C D K L M
-  N Ñ O P Q R S T U V W X Y Z
-  a b c d e f g h i j k l m
-</p> -->
 
 <!-- col-xs-5 col-sm-3 col-md-2 col-lg-2 -->

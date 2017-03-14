@@ -1,4 +1,4 @@
-dashboard.controller('loginCtrl', function($scope,$firebaseObject,$stateParams) {
+dashboard.controller('loginCtrl', function($scope) {
 
   // Show Login
   $scope.showLogin = function() {

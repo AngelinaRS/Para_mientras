@@ -1,4 +1,5 @@
-.modalLogin{
+/*Content all login*/
+.contentLogin{
   position: fixed;
   width: 100%;
   height: 100%;
@@ -10,33 +11,33 @@
   display: block;
   background-color: rgba(255, 255, 255, 0.7);
 }
-
 #boxLoginContent{
   display: none;
 }
-
+/*Content box login and register*/
 .boxLogin{
   width: 75%;
   /*height: 70%;*/
-  background-color: blue;
+  background-color: black;
+  padding: 2% 5%;
 }
-
-.DownloadIt{
-  font-size: 25px;
-  font-family: Bariol_Bold;
-  color: #00DDC1;
+/*Padding for the content of download*/
+.contentDownloadIt{
+  padding: 9% 0;
 }
-
+/*Description to donwload */
 .descriptionDownloadit{
   font-size: 25px;
   font-family: OpenSans_Regular;
   color: #fff;
 }
-
-.contentDownloadIt{
-  padding: 9% 0;
+/*Text green "Descárgala"*/
+.DownloadIt{
+  font-size: 25px;
+  font-family: Bariol_Bold;
+  color: #00DDC1;
 }
-
+/*Box login*/
 .login{
   width: 100%;
   height: 80%;
@@ -44,70 +45,98 @@
   border-radius: 4px;
   padding: 18% 13%;
 }
-
+/*Style for the text "Ingrea con"*/
 .textIngresa{
   font-size: 12px;
   color: #fff;
   font-family: OpenSans_Regular;
   text-align: center;
 }
-
+/*Style for the boxes that contains the elements of the login*/
+.boxItemsLogin{
+  width: 100%;
+  padding: 10px 0;
+}
+.boxItemsLogin:nth-child(1){
+  height: 25%;
+}
+.boxItemsLogin:nth-child(2), .boxItemsLogin:nth-child(4){
+  height: 20%;
+}
+.boxItemsLogin:nth-child(3), .boxItemsLogin:nth-child(5){
+  height: 17.5%;
+}
+/*Style for the button "Facebook"*/
 .facebook{
   width: 75%;
   height: 30px;
   border-radius: 6px;
-  box-shadow: 0px 3px 0px gray;
+  box-shadow: 0px 3px 0px #fff, 0 5px 10px rgba(0, 0, 0, 0.4);
   background-color: #fff;
   color: blue;
   border: none;
   cursor: pointer;
 }
-
-.activeButton:active{
+.facebook:active{
   position: relative;
+  /*Down the button*/
   top: 2px;
   border: none;
+  /*background-color: #e7e7e7;*/
 }
-
+/*Style for the line of 40%*/
 .line40{
   height: 2px;
   width: 40%;
   background-color: #fff;
 }
-
+/*Style for the "O"*/
 .o{
   width: 20%;
 }
-
+/*Style for the button "Correo Electrónico"*/
 .email{
   width: 75%;
   height: 30px;
   border-radius: 6px;
-  box-shadow: 0px 3px 0px gray;
+  box-shadow: 0px 3px 0px #00DDC1, 0 5px 10px rgba(0, 0, 0, 0.4);
   background-color: #00DDC1;
   color: #fff;
   border: none;
   cursor: pointer;
 }
-
+.email:active{
+  position: relative;
+  top: 2px;
+  border: none;
+  /*background-color: #04c3ab;*/
+}
+/*Style for the line of full width*/
 .line100{
   width: 100%;
   height: 2px;
   background-color: #fff;
 }
-
+/*Style for the button "¿Eres Empresa?"*/
 .enterprise{
   width: 75%;
   height: 30px;
   border-radius: 6px;
-  box-shadow: 0px 3px 0px gray;
+  box-shadow: 0px 3px 0px #FF5252, 0 5px 10px rgba(0, 0, 0, 0.4);
   background-color: #FF5252;
   color: #fff;
   border: none;
   cursor: pointer;
 }
-
+.enterprise:active{
+  position: relative;
+  top: 2px;
+  border: none;
+  /*background-color: #dd4747;*/
+}
+/*If the height of the device is higher than 800px*/
 @media (min-height: 801px) {
+  /*Reduce the height of all login*/
   .boxLogin{
     height: 50%;
   }

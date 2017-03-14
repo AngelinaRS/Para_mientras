@@ -3,25 +3,24 @@
     font-family: Bariol_Frenzy_Icons;
     src: url(Typography/BariolFrenzyIcons.ttf);
 }
-
+/*Bariol bold font*/
 @font-face {
   font-family: Bariol_Bold;
   src: url(Typography\Bariol_Bold.otf);
 }
-
+/*Open Sans Regular font*/
 @font-face {
   font-family: OpenSans_Regular;
   src: url(css\Typography\OpenSans-Regular.ttf);
 }
 
-body{
-  background-color: black;
-}
+/*******Style for header menu*******/
 
 /*Style bar header*/
 .barHeader{
   height: 60px;
   background-color: #00BAB9;
+  padding: 0 15px
 }
 
 /*Style logo Frenzy*/
@@ -29,15 +28,15 @@ body{
   height: 100%;
   width: 160px;
 }
-
+/*Content all icons of menu*/
 .contentIconsMenu{
   display: flex;
 }
-
+/*Content of the icon and text*/
 .IconMenu{
   text-align: center;
   width: 20%;
-
+  height: 60px;
 }
 
 /*Style icons menu*/
@@ -60,42 +59,43 @@ body{
 }
 
 
-/*Style for all views*/
+/*******Style for all views*******/
 
+/*Center vertical*/
 .flexVerticalCenter{
   display: flex;
   align-items: center;
 }
-
+/*Center horizontal*/
 .flexHorizontalCenter{
   display: flex;
   justify-content: center;
 }
-
+/*Justify the content to center*/
 .justifyContentCenter{
   justify-content: center;
 }
-
+/*Float the content to right*/
 .floatRight{
   float: right;
 }
-
+/*Float the content to left*/
 .floatLeft{
   float: left;
 }
-
+/*Remove the padding in the bottom*/
 .paddingBottom0{
   padding-bottom: 0;
 }
-
+/*Full width*/
 .width100{
   width: 100%;
 }
-
+/*Full height*/
 .height100{
   height: 100%;
 }
-
+/*Align text to center*/
 .textCenter{
   text-align: center;
 }
